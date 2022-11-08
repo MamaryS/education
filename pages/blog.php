@@ -1,3 +1,10 @@
+<?php
+
+require("../config/commandes.php");
+
+  $etablissements=afficher();
+
+?>
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -55,54 +62,7 @@
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
-	<nav class="fh5co-nav" role="navigation">
-		<div class="top">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 text-right">
-						<p class="site">amary@gmail.com</p>
-						<p class="num">Appel: +01 123 456 7890</p>
-						<ul class="fh5co-social">
-							<li><a href="#"><i class="icon-facebook2"></i></a></li>
-							<li><a href="#"><i class="icon-twitter2"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="top-menu">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html"><i class="icon-study"></i>Educ<span>Mali.</span></a></div>
-					</div>
-					<div class="col-xs-10 text-right menu-1">
-						<ul>
-							<li><a href="../index.html">Accueil</a></li>
-							<li><a href="courses.html">Cours</a></li>
-							<li><a href="teacher.html">Professeurs</a></li>
-							<li><a href="about.html">A propos</a></li>
-							<li><a href="pricing.html">Tarifs</a></li>
-							<li class="has-dropdown active">
-								<a href="blog.html">Nos établissements</a>
-								<ul class="dropdown">
-									<li><a href="#">Web Design</a></li>
-									<li><a href="#">eCommerce</a></li>
-									<li><a href="#">Branding</a></li>
-								</ul>
-							</li>
-							<li><a href="contact.html">Contact</a></li>
-							<li class="btn-cta"><a href="connexion.html"><span>Connexion</span></a></li>
-							<li class="btn-cta"><a href="#"><span>Créer un cours</span></a></li>
-						</ul>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</nav>
+<?php require('../php/nav.php'); ?>
 	
 	<aside id="fh5co-hero">
 		<div class="flexslider">
@@ -133,17 +93,19 @@
 				</div>
 			</div>
 			<div class="row">
+<?php foreach($etablissements as $etablissement): ?> 
 				<div class="col-lg-4 col-md-4 ">
 					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-img-holder" style="background-image: url(../images/universite\ science.jpg);"></a>
+						<a href="#" class="blog-img-holder" style="background-image: url(<?= $etablissement->image ?>);"></a>
 						<div class="blog-text">
-							<h3><a href="#">University of Science and Technology of Bamako</a></h3>
-							<span class="posted_on">Université</span>
+							<h3><a href="#"><?= $etablissement->nom ?></a></h3>
+							<span class="posted_on"><?= $etablissement->niveau ?></span>
 							<span class="comment"><a href="">21<i class="icon-speech-bubble"></i></a></span>
 							
 						</div> 
 					</div>
 				</div>
+<?php endforeach; ?> 
 				<!--<div class="col-lg-4 col-md-4 ">
 					<div class="fh5co-blog animate-box">
 						<a href="#" class="blog-img-holder" style="background-image: url(../images/Ecole-Nationale-dIngenieurs-Abderhame-Baba-Toure.jpg);"></a>

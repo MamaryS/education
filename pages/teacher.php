@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Cours &mdash; EducMali.</title>
+	<title>Professeurs &mdash; EducMali.</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 
@@ -57,66 +57,18 @@
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
-	<nav class="fh5co-nav" role="navigation">
-		<div class="top">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 text-right">
-						<p class="site">amary@gmail.com</p>
-						<p class="num">Appel: +01 123 456 7890</p>
-						<ul class="fh5co-social">
-							<li><a href="#"><i class="icon-facebook2"></i></a></li>
-							<li><a href="#"><i class="icon-twitter2"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="top-menu">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html"><i class="icon-study"></i>Educ<span>Mali.</span></a></div>
-					</div>
-					<div class="col-xs-10 text-right menu-1">
-						<ul>
-							<li><a href="../index.html">Home</a></li>
-							<li class="active"><a href="courses.html">Courses</a></li>
-							<li><a href="teacher.html">Professeurs</a></li>
-							<li><a href="about.html">A propos</a></li>
-							<li><a href="pricing.html">Tarifs</a></li>
-							<li class="has-dropdown">
-								<a href="blog.html">Nos établissements</a>
-								<ul class="dropdown">
-									<li><a href="#">Web Design</a></li>
-									<li><a href="#">eCommerce</a></li>
-									<li><a href="#">Branding</a></li>
-									<li><a href="#">API</a></li>
-								</ul>
-							</li>
-							<li><a href="contact.html">Contact</a></li>
-							<li class="btn-cta"><a href="connexion.html"><span>Connexion</span></a></li>
-							<li class="btn-cta"><a href="#"><span>Créer un cours</span></a></li>
-						</ul>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</nav>
+<?php require('../php/nav.php'); ?>
 	
 	<aside id="fh5co-hero">
 		<div class="flexslider">
 			<ul class="slides">
-		   	<li style="background-image: url(../images/cours.jpg);">
+		   	<li style="background-image: url(../images/montagne.jpg);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="row">
 			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
 			   				<div class="slider-text-inner">
-			   					<h1 class="heading-section">Nos Cours</h1>
+			   					<h1 class="heading-section">Notre Faculté</h1>
 			   				</div>
 			   			</div>
 			   		</div>
@@ -125,58 +77,128 @@
 		  	</ul>
 	  	</div>
 	</aside>
-
-	<div id="fh5co-course">
+	
+	<div id="fh5co-staff">
 		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<h2>NOTRE COURS</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-				</div>
-			</div>
 			<div class="row">
-				<div class="col-md-6 animate-box">
-					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(../images/project-1.jpg);">
-						</a>
-						<div class="desc">
-							<h3><a href="#">Web Master</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Prendre un cours</a></span>
+				<div class="col-md-3 text-center">
+					<div class="staff">
+						<div class="staff-img" style="background-image: url(../images/moussa.jpg);">
+							<ul class="fh5co-social">
+								<li><a href="#"><i class="icon-facebook2"></i></a></li>
+								<li><a href="#"><i class="icon-twitter2"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+								<li><a href="#"><i class="icon-github"></i></a></li>
+							</ul>
 						</div>
+						<span>Comptabilité</span>
+						<h3><a href="#">Moussa Cissé</a></h3>
+						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
 					</div>
 				</div>
-				<div class="col-md-6 animate-box">
-					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(../images/project-2.jpg);">
-						</a>
-						<div class="desc">
-							<h3><a href="#">Comptabilité &amp; d'entreprise</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Prendre un cours</a></span>
+				<div class="col-md-3 animate-box text-center">
+					<div class="staff">
+						<div class="staff-img" style="background-image: url(../images/amadou.jpg);">
+							<ul class="fh5co-social">
+								<li><a href="#"><i class="icon-facebook2"></i></a></li>
+								<li><a href="#"><i class="icon-twitter2"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+								<li><a href="#"><i class="icon-github"></i></a></li>
+							</ul>
 						</div>
+						<span>Programmation web</span>
+						<h3><a href="#">Amadou Maiga</a></h3>
+						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
 					</div>
 				</div>
-				<div class="col-md-6 animate-box">
-					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(../images/project-3.jpg);">
-						</a>
-						<div class="desc">
-							<h3><a href="#">Technologie &amp; scientifique</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Prendre un cours</a></span>
+				<div class="col-md-3 animate-box text-center">
+					<div class="staff">
+						<div class="staff-img" style="background-image: url(../images/mamary.jpg);">
+							<ul class="fh5co-social">
+								<li><a href="#"><i class="icon-facebook2"></i></a></li>
+								<li><a href="#"><i class="icon-twitter2"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+								<li><a href="#"><i class="icon-github"></i></a></li>
+							</ul>
 						</div>
+						<span>Langue</span>
+						<h3><a href="#">Mamary Sissoko</a></h3>
+						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
 					</div>
 				</div>
-				<div class="col-md-6 animate-box">
-					<div class="course">
-						<a href="#" class="course-img" style="background-image: url(../images/sante.jpg);">
-						</a>
-						<div class="desc">
-							<h3><a href="#">Santé &amp; Psychologie</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-							<span><a href="#" class="btn btn-primary btn-sm btn-course">Prendre un cours</a></span>
+				<div class="col-md-3 animate-box text-center">
+					<div class="staff">
+						<div class="staff-img" style="background-image: url(../images/troufo.jpg);">
+							<ul class="fh5co-social">
+								<li><a href="#"><i class="icon-facebook2"></i></a></li>
+								<li><a href="#"><i class="icon-twitter2"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+								<li><a href="#"><i class="icon-github"></i></a></li>
+							</ul>
 						</div>
+						<span>Santé</span>
+						<h3><a href="#">Ismaila Trouffo</a></h3>
+						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
+					</div>
+				</div>
+				<div class="col-md-3 animate-box text-center">
+					<div class="staff">
+						<div class="staff-img" style="background-image: url(../images/bouare.jpg);">
+							<ul class="fh5co-social">
+								<li><a href="#"><i class="icon-facebook2"></i></a></li>
+								<li><a href="#"><i class="icon-twitter2"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+								<li><a href="#"><i class="icon-github"></i></a></li>
+							</ul>
+						</div>
+						<span>Art</span>
+						<h3><a href="#">Abdoulaye Bouaré</a></h3>
+						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
+					</div>
+				</div>
+				<div class="col-md-3 animate-box text-center">
+					<div class="staff">
+						<div class="staff-img" style="background-image: url(../images/ms.jpg);">
+							<ul class="fh5co-social">
+								<li><a href="#"><i class="icon-facebook2"></i></a></li>
+								<li><a href="#"><i class="icon-twitter2"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+								<li><a href="#"><i class="icon-github"></i></a></li>
+							</ul>
+						</div>
+						<span>Immobilier</span>
+						<h3><a href="#">Tounkarakè</a></h3>
+						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
+					</div>
+				</div>
+				<div class="col-md-3 animate-box text-center">
+					<div class="staff">
+						<div class="staff-img" style="background-image: url(../images/staff-2.jpg);">
+							<ul class="fh5co-social">
+								<li><a href="#"><i class="icon-facebook2"></i></a></li>
+								<li><a href="#"><i class="icon-twitter2"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+								<li><a href="#"><i class="icon-github"></i></a></li>
+							</ul>
+						</div>
+						<span>Science &amp; Technologie</span>
+						<h3><a href="#">Bocar Tangara</a></h3>
+						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
+					</div>
+				</div>
+				<div class="col-md-3 animate-box text-center">
+					<div class="staff">
+						<div class="staff-img" style="background-image: url(../images/staff-3.jpg);">
+							<ul class="fh5co-social">
+								<li><a href="#"><i class="icon-facebook2"></i></a></li>
+								<li><a href="#"><i class="icon-twitter2"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+								<li><a href="#"><i class="icon-github"></i></a></li>
+							</ul>
+						</div>
+						<span>Media</span>
+						<h3><a href="#">Oumou</a></h3>
+						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
 					</div>
 				</div>
 			</div>
